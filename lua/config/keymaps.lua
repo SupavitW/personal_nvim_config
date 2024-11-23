@@ -26,7 +26,7 @@ keymap.set("i", "<C-e>", "<END>")
 keymap.set("n", "cd", ":CdProject<CR>")
 
 -- Close current buffer
-keymap.set("n", "<C-x>", ":bd<CR>")
+keymap.set("n", "<C-x>", ":bd<CR>", { noremap = true, silent = true })
 
 -- Close current window
 keymap.set("n", "<C-w>", ":q<CR>")

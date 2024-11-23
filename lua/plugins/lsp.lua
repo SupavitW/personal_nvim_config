@@ -7,9 +7,9 @@ return {
         "stylua",
         "tailwindcss-language-server",
         "typescript-language-server",
-        "css-lsp",
+        "lua-language-server",
+        "yaml-language-server",
         "gopls",
-        "angular-language-server",
       })
     end,
   },
