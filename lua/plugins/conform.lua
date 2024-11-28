@@ -14,6 +14,8 @@ return {
           javascript = { "prettier" },
           tsx = { "prettier" },
           typescript = { "prettier" },
+          cs = { "csharpier" },
+          angular = { "prettier" },
         },
       }
     end,
