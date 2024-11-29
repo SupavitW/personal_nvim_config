@@ -29,3 +29,6 @@ vim.api.nvim_create_autocmd("TermOpen", {
   pattern = "*",
   command = "startinsert",
 })
+
+-- Disable LazyVim auto format
+vim.g.autoformat = false

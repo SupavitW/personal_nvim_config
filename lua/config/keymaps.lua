@@ -19,6 +19,10 @@ keymap.set("n", "<leader>t", ":term<CR>")
 keymap.set("i", "jk", "<ESC>")
 
 -- Navigate begin/end of line during insert mode
+keymap.set("i", "<C-h>", "<Left>", { desc = "move left" })
+keymap.set("i", "<C-l>", "<Right>", { desc = "move right" })
+keymap.set("i", "<C-j>", "<Down>", { desc = "move down" })
+keymap.set("i", "<C-k>", "<Up>", { desc = "move up" })
 keymap.set("i", "<C-b>", "<ESC>^i")
 keymap.set("i", "<C-e>", "<END>")
 
@@ -29,7 +33,7 @@ keymap.set("n", "cd", ":CdProject<CR>")
 keymap.set("n", "<C-x>", ":bd<CR>", { noremap = true, silent = true })
 
 -- Close current window
-keymap.set("n", "<C-w>", ":q<CR>")
+keymap.set("n", "<C-w>", ":q<CR>", { noremap = true, silent= true})
 
 -- Close current tab
 keymap.set("n", "<C-t>", ":tabclose<CR>")
