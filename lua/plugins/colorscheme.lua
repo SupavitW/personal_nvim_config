@@ -1,5 +1,8 @@
 return {
   {
+    "xiyaowong/transparent.nvim",
+  },
+  {
     "craftzdog/solarized-osaka.nvim",
     lazy = true,
     priority = 1000,
@@ -29,5 +32,10 @@ return {
   {
     "olimorris/onedarkpro.nvim",
     lazy = true,
+    opts = function()
+      return {
+        transparent = true,
+      }
+    end,
   },
 }

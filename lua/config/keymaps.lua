@@ -70,6 +70,9 @@ keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
 keymap.set("n", "ss", ":split<Return>", opts)
 keymap.set("n", "sv", ":vsplit<Return>", opts)
 
+-- Toggle Transparent
+keymap.set("n", "<leader>tt", ":TransparentToggle<enter>", { noremap = true, silent = true})
+
 -- Unmap the default LazyVim format keymap
 keymap.del("n", "<leader>cf")
 
