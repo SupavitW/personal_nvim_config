@@ -167,7 +167,12 @@ return {
         winblend = 0,
         initial_mode = "normal",
         mappings = {
-          n = {},
+          n = {
+            ["<C-d>"] = actions.delete_buffer,
+          },
+          i = {
+            ["<C-d>"] = actions.delete_buffer,
+          },
         },
       })
       opts.pickers = {
