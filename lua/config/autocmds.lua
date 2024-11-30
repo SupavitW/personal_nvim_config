@@ -11,7 +11,7 @@ end ----
 
 vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
   callback = function()
-    if #vim.api.nvim_buf_get_name(0) ~= 0 and vim.bo.buflisted then
+    if #vim.api.nvim_buf_get_name(0) ~= 0 and vim.bo.buflisted and vim.bo.buftype == "" then
       vim.cmd("silent w")
 
       -- local time = os.date("%I:%M %p")
@@ -30,4 +30,10 @@ vim.api.nvim_create_autocmd("BufEnter", {
   callback = function()
     vim.opt.formatoptions:remove({ "c", "r", "o" })
   end,
+})
+
+-- Start terminal with terminal mode
+vim.api.nvim_create_autocmd("TermOpen", {
+  pattern = "*",
+  command = "startinsert",
 })
